@@ -28,7 +28,7 @@ const Navegacion = () => {
         </Navbar.Collapse>
       </Navbar>
 
-      <SeccionTextosHeader>
+      <SeccionTextosHeader className="container">
         <TituloHeader>Potencia tus ventas al menos un 200%</TituloHeader>
         <SubtituloHeader>Con una pagina web potente</SubtituloHeader>
         <OndaContenedor >

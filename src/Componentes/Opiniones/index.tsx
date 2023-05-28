@@ -6,7 +6,7 @@ const Opiniones = () => {
   return (
     <SeccionOpiniones>
       <TituloOpiniones>Que dicen nuestros clientes</TituloOpiniones>
-      <ContenedorCards>
+      <ContenedorCards className='container'>
         <ContenedorCard> 
           <ImagenCard  src={Portada1}/>
           <SubContenedorOpiniones>
