@@ -17,7 +17,7 @@
 
 - Abra la terminal de su computador.
 - Entre al directorio de su preferencia usando (cd "nombre del directorio")
-- Si usted no tiene una clave SSH tambien puede usar el metodo git clone con HHTTPS. Solamente tiene que ejecutar el comando "git clone https://github.com/NicolasEstebanCuervo/News.git"
+- Si usted no tiene una clave SSH tambien puede usar el metodo git clone con HHTTPS. Solamente tiene que ejecutar el comando "git@github.com:NicolasEstebanCuervo/Malony.git"
 - Abra el repositorio clonado en su editor de codigo de preferencia.
 - En la terminal del editor de codigo ejecute el comando "npm start".
 
