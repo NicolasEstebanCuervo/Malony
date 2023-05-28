@@ -36,25 +36,38 @@ const Opiniones = () => {
 };
 
 const SeccionOpiniones = styled.section`
-  padding: 50px;
+  margin-top: 50px;
+  padding: 50px 0;
 `
 
 const TituloOpiniones = styled.section`
   color: #642a73;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 60px;
+
+  @media (max-width: 600px) {
+    font-size:10vw;
+  }
 `
 
 const ContenedorCards = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `
 
 const ContenedorCard = styled.div`
+  margin:2%;
   background: #4d0686;
   display: flex;
-  width: 35%;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 5px;
@@ -62,12 +75,29 @@ const ContenedorCard = styled.div`
 `
 
 const ImagenCard = styled.img`
-  width: 20%;
+  max-width:100px;
+  width: 100%;
   height: 100px;
   object-fit: cover;
   border: 3px solid #fff;
   border-radius: 100%;
   display: block;
+
+  @media (max-width: 1000px) {
+    max-width: 120px;
+    height: 120px;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 80px;
+    height: 80px;
+  }
+
+  @media (max-width: 250px) {
+    max-width: 50px;
+    height: 50px;
+  }
+
 `
 
 const SubContenedorOpiniones = styled.div`
@@ -78,10 +108,35 @@ const SubContenedorOpiniones = styled.div`
 `
 
 const TituloCard = styled.h1`
+  font-size: 2vmax;
+
+  @media (max-width: 1000px) {
+    font-size:5vw;
+  }
+
+  @media (max-width: 700px) {
+    font-size:8vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size:10vw;
+  }
 `
 
 const ParrafoCard = styled.p`
+  font-size: 1vmax;
 
+  @media (max-width: 1000px) {
+    font-size:2vw;
+  }
+
+  @media (max-width: 700px) {
+    font-size:3vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size:5vw;
+  }
 `
 
 export default Opiniones;

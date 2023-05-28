@@ -16,7 +16,7 @@ const Navegacion = () => {
     <Header>
       <Navbar expand="lg" css={nav} className="container">
         <Navbar.Brand href="#home" css={titulo_navegacion}>¡Bienvenido a Malony!</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick} />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" css={icon} onClick={handleClick} />
         <Navbar.Collapse id="basic-navbar-nav" css={navbarCollapseStyles} className={`${isOpen ? "show" : "centrar"}`}>
           <Nav>
             <Nav.Link href="#Sobre mi" css={links}>Inicio</Nav.Link>
@@ -45,23 +45,29 @@ const Navegacion = () => {
 export default Navegacion;
 
 const Header = styled.header`
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(to right,hsla(333, 86%, 55%, 0.573),hsla(10, 73%, 52%, 0.573)),url(${Portada});
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+  padding: 50px 0;
+  width: 100%;
+  background: linear-gradient(to right,hsla(313, 70%, 35%, 1) 0%, hsla(315, 73%, 52%, 0.573)),url(${Portada});
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 `;
 
 const nav = css`
-  width: 90%;
   padding-bottom: 20px;
-  border-bottom: 1px solid #fff;
+  width: 90%;
 
   @media (max-width: 320px) {
     padding: 2vw;
   }
 `;
+
+const icon = css`
+  @media (max-width: 300px) {
+    font-size: 3vw;
+    padding: 0.25rem 0.5rem;
+  }
+`
 
 const navbarCollapseStyles  = css`
   justify-content: end;
@@ -69,13 +75,26 @@ const navbarCollapseStyles  = css`
 
 const titulo_navegacion = css`
   color: #fff;
+  font-size: 35px;
   
   &:hover {
     color: #FFD4F3;
   }
 
-  @media (max-width: 320px) {
-    font-size: 5vw;
+  @media (max-width: 1200px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 4vw;
+  }
+
+  @media (max-width: 700px) {
+    font-size:5vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size:6vw;
   }
 `;
 
@@ -84,6 +103,8 @@ const links = css`
   transition: border-color 0.5s ease;
   padding-bottom: 10px;
   color: #fff;
+  font-size: 20px !important;
+  padding: 2%;
   
   &:hover {
     color: #FFD4F3;
@@ -95,11 +116,27 @@ const links = css`
   }
 
   @media (max-width: 1200px) {
-    font-size: 12px;
+    border: none;
+    &:hover{
+    background-color: #FFADE9;
+    color: #312f2f !important;
+    }
   }
 
-  @media (max-width: 320px) {
-    font-size: 3vw;
+  @media (max-width: 1200px) {
+    font-size: 15px !important;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 3vw !important;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 4vw !important;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 5vw !important;
   }
 `;
 
@@ -116,12 +153,36 @@ const SeccionTextosHeader = styled.section`
 const TituloHeader = styled.h1`
   font-size: 50px;
   color: #fff;
+
+  @media (max-width: 1000px) {
+    font-size:4vw;
+  }
+
+  @media (max-width: 700px) {
+    font-size:6vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size:10vw;
+  }
 `
 
 const SubtituloHeader = styled.h1`
   font-size: 30px;
   color: #fff;
   font-weight: 300;
+
+  @media (max-width: 1000px) {
+    font-size:3vw;
+  }
+
+  @media (max-width: 700px) {
+    font-size:5vw;
+  }
+
+  @media (max-width: 400px) {
+    font-size:9vw;
+  }
 `
 
 const OndaContenedor = styled.div`
@@ -133,7 +194,8 @@ const OndaContenedor = styled.div`
 `
 
 const Onda = styled.svg`
-  height: 100%; width: 100%;
+  height: 100%;
+  width: 100%;
 ` 
 const Path = styled.path`
   stroke: none; fill: #fff;

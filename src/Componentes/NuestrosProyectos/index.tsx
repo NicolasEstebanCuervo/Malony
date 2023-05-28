@@ -108,29 +108,49 @@ export default NuestrosProyectos;
 
 const SeccionProyectos = styled.div`
   background: #f2f2f2;
-  padding: 50px;
+  padding: 50px 0;
 `;
 
 const TituloProyectos = styled.h1`
   color: #642a73;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 60px;
+
+  @media (max-width: 600px) {
+    font-size:10vw;
+  }
 `;
 
 const ContenedorProyectos = styled.div`
   display: grid;
-  grid-template-columns: repeat(4,250px);
+  grid-template-columns: repeat(4, 220px);
   gap: 10px;
   justify-content: center;
-  align-items: center;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(4,180px);
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ContenedorProyecto = styled.div`
-  overflow: hidden;
   position: relative;
   cursor: pointer;
-  height: 200px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: auto;
+
+  @media (max-width: 1100px) {
+    max-width: 180px;
+  }
 `;
 
 const ImagenProyecto = styled.img`
@@ -159,10 +179,36 @@ const HoverProyecto = styled.div`
 `;
 
 const ImagenHover = styled.img`
-  width: 50px;
+  width: 70px;
+
+  @media (max-width: 400px) {
+    width: 50px;
+  }
+
+  @media (max-width: 200px) {
+    width: 30px;
+  }
 `;
 
 const TextoHover = styled.h1`
-  font-size: 15px;
+  font-size: 30px;
   color: #fff;
+
+  @media (max-width: 1000px) {
+    font-size: 3vw;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 5vw;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 7vw;
+  }
 `;
+
+
+
+
+
+
