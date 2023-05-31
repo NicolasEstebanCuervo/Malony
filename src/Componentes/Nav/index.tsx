@@ -23,7 +23,7 @@ const Navegacion = () => {
             <Nav.Link href="#Conocimientos" css={links}>Nuestro producto</Nav.Link>
             <Nav.Link href="#Estudios" css={links}>Nuestros proyectos</Nav.Link>
             <Nav.Link href="#Mi mejor proyecto" css={links}>Opiniones</Nav.Link>
-            <Nav.Link href="#Contacto" css={links}>Contacto</Nav.Link>
+            <Nav.Link href="#Contacto" css={links}>Contactanos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
