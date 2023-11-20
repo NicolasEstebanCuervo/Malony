@@ -11,7 +11,7 @@ import Hover from '../../Imagenes/Hover.png';
 
 const NuestrosProyectos = () => {
   return (
-    <SeccionProyectos>
+    <SeccionProyectos id="NuestrosProyectos">
       <TituloProyectos>Portafolio</TituloProyectos>
       <ContenedorProyectos className="container">
 

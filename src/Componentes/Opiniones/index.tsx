@@ -4,7 +4,7 @@ import Portada2 from '../../Imagenes/FotoPersona2.jpg'
 
 const Opiniones = () => {
   return (
-    <SeccionOpiniones>
+    <SeccionOpiniones id="Opiniones">
       <TituloOpiniones>Que dicen nuestros clientes</TituloOpiniones>
       <ContenedorCards className='container'>
         <ContenedorCard> 

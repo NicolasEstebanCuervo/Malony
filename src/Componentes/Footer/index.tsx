@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 const Footer = () => {
   return (
-    <ContenedorFooter>
+    <ContenedorFooter id="Contacto">
       <div className="container">
         <ContenedorSecciones>
           <ContenedorSeccion>

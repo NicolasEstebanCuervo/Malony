@@ -13,16 +13,16 @@ const Navegacion = () => {
   };
 
   return (
-    <Header>
+    <Header id="Inicio">
       <Navbar expand="lg" css={nav} className="container">
         <Navbar.Brand href="#home" css={titulo_navegacion}>¡Bienvenido a Malony!</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" css={icon} onClick={handleClick} />
         <Navbar.Collapse id="basic-navbar-nav" css={navbarCollapseStyles} className={`${isOpen ? "show" : "centrar"}`}>
           <Nav>
-            <Nav.Link href="#Sobre mi" css={links}>Inicio</Nav.Link>
-            <Nav.Link href="#Conocimientos" css={links}>Nuestro producto</Nav.Link>
-            <Nav.Link href="#Estudios" css={links}>Nuestros proyectos</Nav.Link>
-            <Nav.Link href="#Mi mejor proyecto" css={links}>Opiniones</Nav.Link>
+            <Nav.Link href="#Inicio" css={links}>Inicio</Nav.Link>
+            <Nav.Link href="#NuestroProducto" css={links}>Nuestro producto</Nav.Link>
+            <Nav.Link href="#NuestrosProyectos" css={links}>Nuestros proyectos</Nav.Link>
+            <Nav.Link href="#Opiniones" css={links}>Opiniones</Nav.Link>
             <Nav.Link href="#Contacto" css={links}>Contactanos</Nav.Link>
           </Nav>
         </Navbar.Collapse>

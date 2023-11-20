@@ -3,7 +3,7 @@ import  Ilustracion from "../../Imagenes/Ilustracion1.svg"
 
 const NuestroProducto = () => {
   return (
-    <SectionNuestroProducto>
+    <SectionNuestroProducto id="NuestroProducto">
       <TituloNuestroProducto>Nuestro producto</TituloNuestroProducto>
       <SubContenedorSobreNosotros>
         <ImagenSobreNosotros src={Ilustracion} />
